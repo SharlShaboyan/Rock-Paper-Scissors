@@ -1,0 +1,86 @@
+.me {
+    border: 3px solid black;
+    display: grid;
+    justify-content: stretch;
+    align-items: stretch;
+    grid-gap: 20px;
+    grid-template-rows: 5% 60% 35%;
+}
+
+.me > img {
+    height: 300px;
+    width: 300px;
+    margin-top: 30px;
+    justify-self: center;
+}
+
+.tools {
+    display: grid;
+    justify-content: stretch;
+    align-items: stretch;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.tools > img {
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    .tools > img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .me > img {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .tools > img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .me > img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .tools > img {
+        height: 30px;
+        width: 30px;
+        border: 1px solid black;
+    }
+
+    .me > img {
+        height: 140px;
+        width: 140px;
+    }
+
+    .tools {
+        grid-gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .tools > img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .me > img {
+        height: 100px;
+        width: 100px;
+    }
+}
